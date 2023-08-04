@@ -1,0 +1,116 @@
+body{
+    display: block;
+}
+
+#section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color:rgba(137, 80, 175, 0.479);
+    width: 800px;
+    height: 500px;
+    border-radius: 3px;
+}
+
+.image{
+    width:49%;
+    height: 98%;
+    border-radius: 3%;
+    border-color: rgba(204, 127, 255, 0.479);
+    margin-left: 15px;
+}
+
+#aside{
+    display: block;
+    height: 100%;
+    margin: 1.5em;
+    padding: 5px;
+}
+.grayTitle{
+    color: grey;
+    font-size: 24px;
+    margin-top: 0.4em;
+    width: 100%;
+}
+.title{
+    font-size: 2em;
+    width: 5em;
+    margin-top: 0;
+}
+.description{
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+}
+#price-box{
+    display: flex;
+    align-items: center;
+}
+.price{
+    font-family: fantasy;
+    font-size: 42px;
+    width: 50%;
+ 
+}
+.price2{
+    width: 20%;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.btn{
+    background-color: aqua;
+    width: 26em;
+    height: 4em;
+    border-radius: 8px;
+    background-color: black;
+    color: blanchedalmond;
+}
+@media only screen and (max-width: 600px){
+    #section{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .image{
+        margin: 2px;
+        width: 98%;
+        border-radius: 3px; 
+    }
+    .grayTitle, .description, .price, .price2{
+        width: auto;
+    }
+    .grayTitle{
+        margin-left: .4em;
+    }
+    .title{
+        margin-left: .3em;
+    }
+    .description{
+        margin-left: .5em;
+    }
+    .price, .price2{
+        margin-left: .2em;
+    }
+    .btn{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    #section{
+        flex-direction: column;
+        height: auto;
+        width: 99%;
+    }
+    .image{
+        width: auto;
+        height: 50%;
+    }
+    .price{
+        width: 25%;
+    }
+    .btn{
+        width: 100%;
+    }
+}
